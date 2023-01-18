@@ -6,8 +6,14 @@
 
 * Na pasta server, rode <code>npm i</code>, para instalar as dependencias do projeto
 
-# Para iniciar o servidor
+### Para iniciar o servidor
 
 * Dentro da pasta server, entre com <code>npm run dev</code> para iniciar o ambiente de desenvolvimento
 
-* Acesse <code>http://localhost:3003/</code> para ter acesso à aplicação
+* Acesse **http://localhost:3003/** para ter acesso à aplicação
+
+### Ferramentas de desenvolvimento
+
+1. Na pasta serrver, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
+
+2. Na pasta serrver, rode <code>npx prisma studio</code> para visualizar o BD acessando **http://localhost:5555**
