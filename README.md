@@ -14,6 +14,6 @@
 
 ### Ferramentas de desenvolvimento
 
-1. Na pasta serrver, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
+1. Na pasta server, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
 
-2. Na pasta serrver, rode <code>npx prisma studio</code> para visualizar o BD acessando **http://localhost:5555**
+2. Na pasta server, rode <code>npx prisma studio</code> para visualizar o BD acessando **http://localhost:5555/**
