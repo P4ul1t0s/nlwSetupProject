@@ -15,5 +15,5 @@ app.get('/hello', async () => {
 app.listen({
     port: 3003
 }).then(() => {
-    console.log('HTTP Server Running!\nDefault port is: 3003')
+    console.log('HTTP Server Running!\nAccess: http://localhost:3003/hello')
 })
