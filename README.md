@@ -47,3 +47,16 @@
 1. Na pasta _server_, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
 
 2. Na pasta _server_, rode <code>npx prisma studio</code> para visualizar o BD acessando **http://localhost:5555/**
+
+### Rotas
+
+###### Criando hábito:
+
+[POST] http://localhost:3003/habits
+
+JSON: 
+
+{
+	"title": "Exemplo de Hábito",
+	"weekDays": [0, 1, 2]
+}

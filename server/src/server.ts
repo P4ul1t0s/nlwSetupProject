@@ -10,5 +10,5 @@ app.register(appRoutes)
 app.listen({
     port: 3003
 }).then(() => {
-    console.log('HTTP Server Running!\nAccess: http://localhost:3003/hello')
+    console.log('HTTP Server Running!\nAccess: http://localhost:3003/')
 })
