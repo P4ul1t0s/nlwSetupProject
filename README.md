@@ -49,6 +49,9 @@
 2. Na pasta _server_, rode <code>npx prisma studio</code> para visualizar o BD acessando **http://localhost:5555/**
 
 ### Rotas
+###### Buscando hábito:
+
+[GET] http://localhost:3003/day?date=query
 
 ###### Criando hábito:
 
@@ -60,10 +63,3 @@ JSON:
 	"title": "Exemplo de Hábito",
 	"weekDays": [0, 1, 2]
 }
-###### Buscando hábito:
-
-[GET] http://localhost:3003/day
-
-QUERY: 
-
-date=2023-01-01T12:00:00.000z
