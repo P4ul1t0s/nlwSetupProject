@@ -60,3 +60,10 @@ JSON:
 	"title": "Exemplo de Hábito",
 	"weekDays": [0, 1, 2]
 }
+###### Buscando hábito:
+
+[GET] http://localhost:3003/day
+
+QUERY: 
+
+date=2023-01-01T12:00:00.000z
