@@ -51,7 +51,10 @@
 ### Rotas
 ###### Buscando hábito:
 
-[GET] http://localhost:3003/day?date=query
+[GET] http://localhost:3003/day?date=:query
+###### Completando/Descompletando hábito:
+
+[PATCH] http://localhost:3003/habits/:id/toggle
 
 ###### Criando hábito:
 
