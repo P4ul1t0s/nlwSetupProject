@@ -52,6 +52,9 @@
 ###### Buscando hábito:
 
 [GET] http://localhost:3003/day?date=:query
+###### Buscando resumo do hábito:
+
+[GET] http://localhost:3003/summary
 ###### Completando/Descompletando hábito:
 
 [PATCH] http://localhost:3003/habits/:id/toggle
