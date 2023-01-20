@@ -31,7 +31,6 @@ export function HabitDay(props: HabitDayProps){
                     <span className="mt-1 font-extrabold leading-tight text-3xl">19/01</span>
 
                     <ProgressBar progress={completedPercentage}/>
-                    
                     <Popover.Arrow width={16} height={8} className="fill-zinc-900"/>
                 
                     <div className="mt-6 flex flex-col gap-3">
