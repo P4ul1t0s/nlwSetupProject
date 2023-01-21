@@ -35,7 +35,7 @@ export function New(){
         }finally{
             setTitle('')
             setWeekDays([])
-            Alert.alert('Novo Hábito', 'Hábito adicionado com Sucesso')
+            Alert.alert('Novo Hábito', 'Hábito adicionado com sucesso')
         }
     }
 
