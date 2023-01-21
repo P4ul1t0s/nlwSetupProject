@@ -13,10 +13,12 @@
     "@fastify/cors": "^8.2.0",
     "@prisma/client": "^4.9.0",
     "dayjs": "^1.11.7",
-    "fastify": "^4.11.0"
+    "fastify": "^4.11.0",
+    "fastify-cors": "^6.1.0"
   },
   "devDependencies": {
     "@mermaid-js/mermaid-cli": "^9.3.0",
+    "@types/fastify-cors": "^2.1.0",
     "@types/node": "^18.11.18",
     "prisma": "^4.9.0",
     "prisma-erd-generator": "^1.2.5",
