@@ -37,8 +37,8 @@ export function HabitDay({defaultCompleted = 0, amount = 0, date}: HabitDayProps
                 'border-zinc-200 border-2': isCurrentDate
                 })}
             >{
-                completedPercentage == 100 && 
-                <StarFour size={36}/>
+                // completedPercentage == 100 && 
+                // <StarFour size={36}/>
             }</Popover.Trigger>
             <Popover.Portal>
                 <Popover.Content className="min-w-[320px] w-full p-6 rounded-2xl bg-zinc-900 flex flex-col focus:outline-none focus:ring-2 focus:ring-violet-700 focus:ring-offset-2 focus:ring-offset-background">

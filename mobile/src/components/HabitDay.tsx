@@ -33,8 +33,8 @@ export function HabitDay({amountOfHabits = 0, amountCompleted = 0, date, ...rest
             activeOpacity={0.7}
             {...rest}
         >{
-            amountAcconplishedPercentage == 100 && 
-            <MaterialCommunityIcons name="star-four-points-outline" size={37} color="white" />
+            // amountAcconplishedPercentage == 100 && 
+            // <MaterialCommunityIcons name="star-four-points-outline" size={37} color="white" />
         }</TouchableOpacity>
     )
 }
