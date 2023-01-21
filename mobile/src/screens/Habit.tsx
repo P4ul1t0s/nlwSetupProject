@@ -50,10 +50,16 @@ export function Habit(){
     }
 
     async function handleToggleHabit(habitId: string){
-        if(completedHabits.includes(habitId)){
-            setCompletedHabits(prevState => prevState.filter(habit => habit !== habitId))
-        }else{
-            setCompletedHabits(prevState => [...prevState, habitId])
+        try{
+            await api.patch(`habits/${habitId}/toggle`)
+            if(completedHabits.includes(habitId)){
+                setCompletedHabits(prevState => prevState.filter(habit => habit !== habitId))
+            }else{
+                setCompletedHabits(prevState => [...prevState, habitId])
+            }
+        }catch(err){
+            console.error(err)
+            Alert.alert('Ops', 'Não foi possivel atualizar o status do hábito')
         }
     }
 
@@ -84,8 +90,7 @@ export function Habit(){
                     "opacity-50": isDateInPast
                 })}>
                     {
-                        dayInfo?.possibleHabits
-                        ?
+                        dayInfo?.possibleHabits ?
                         dayInfo?.possibleHabits.map(habit => (
                             <CheckBox
                                 key={habit.id}

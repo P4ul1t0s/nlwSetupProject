@@ -50,6 +50,8 @@
 
 * Na pasta _server_, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
 
+* Na pasta _server_, rode <code>npx prisma db seed</code> para popular o banco com alguns hábitos
+
 * Na pasta _server_, rode <code>npx prisma studio</code> para visualizar a interface gráfica do BD acessando **http://localhost:5555/**
 
 #

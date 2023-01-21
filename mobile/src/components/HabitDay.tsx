@@ -27,7 +27,7 @@ export function HabitDay({amountOfHabits = 0, amountCompleted = 0, date, ...rest
                 'bg-violet-600 border-violet-500': amountAcconplishedPercentage >= 60 && amountAcconplishedPercentage < 80,
                 'bg-violet-500 border-violet-400': amountAcconplishedPercentage >= 80 && amountAcconplishedPercentage < 100,
                 'bg-violet-400 border-violet-300': amountAcconplishedPercentage == 100,
-                'border-zinc-600 border-2': isCurrentDate
+                'border-zinc-200 border-2': isCurrentDate
             })}
             style={{width: DAY_SIZE, height: DAY_SIZE}}
             activeOpacity={0.7}
