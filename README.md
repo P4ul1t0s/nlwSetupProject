@@ -1,4 +1,4 @@
-# Passos para a instalação do projeto
+# nlwSetupMobileProject - Web & Mobile
 
 ### Configuração do ambiente
 
@@ -10,21 +10,24 @@
 
 * Na pasta _mobile_, rode <code>npm i</code>, para instalar as dependencias da aplicação mobile
 
-### Para iniciar o backend (nlwSetupProject server)
+#
+### Para iniciar o backend (./server)
 
 * Dentro da pasta _server_, entre com <code>npm run dev</code> para iniciar o ambiente de desenvolvimento
 
 * Acesse **http://localhost:3003/** para ter acesso à aplicação
 
-### Para iniciar o frontend (nlwSetupProject web)
+#
+### Para iniciar o frontend (./web)
 
 * Dentro da pasta _web_, entre com <code>npm run dev</code> para iniciar o ambiente de desenvolvimento
 
 * Acesse **http://localhost:5173/** para ter acesso à aplicação
 
-### Para iniciar a aplicação mobile (nlwSetupProject mobile)
+#
+### Para iniciar a aplicação mobile (./mobile)
 
-###### Utilizando aparelho físico (iOS & Android)
+##### 1. Utilizando aparelho físico (iOS & Android)
 
 * Instale o app **Expo Go** em seu dispositivo
 
@@ -34,7 +37,7 @@
 
 * Leia o QR Code gerado com seu aparelho
 
-###### Utilizando aparelho emulado (iOS & Android)
+##### 2. Utilizando aparelho emulado (iOS & Android)
 
 * Certifique-se de que seu emulador está em atividade
 
@@ -42,32 +45,30 @@
 
 * Siga as instruções exibidas para escolher o emudalor onde deseja que a aplicação seja instalada
 
+#
 ### Ferramentas de desenvolvimento
 
-1. Na pasta _server_, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
+* Na pasta _server_, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
 
-2. Na pasta _server_, rode <code>npx prisma studio</code> para visualizar o BD acessando **http://localhost:5555/**
+* Na pasta _server_, rode <code>npx prisma studio</code> para visualizar a interface gráfica do BD acessando **http://localhost:5555/**
 
-### Rotas
-###### Buscando hábito:
+#
+### Rotas do Projeto
+##### Buscando hábito:
 
 [GET] http://localhost:3003/day?date=:query
 
-###### Buscando resumo do hábito:
+##### Buscando resumo do hábito:
 
 [GET] http://localhost:3003/summary
 
-###### Completando/Descompletando hábito:
+##### Completando/Descompletando hábito:
 
 [PATCH] http://localhost:3003/habits/:id/toggle
 
-###### Criando hábito:
+##### Criando hábito:
 
-[POST] http://localhost:3003/habits
+[POST] http://localhost:3003/habits <br/>
+JSON body: { "title": "Exemplo de Hábito",	"weekDays": [0, 1, 2] }
 
-JSON: 
-
-{
-	"title": "Exemplo de Hábito",
-	"weekDays": [0, 1, 2]
-}
+_Nota: o backend deve estar sendo executado na porta 3003 para que as rotas funcionem como nos exemplos acima. Caso não esteja, nenhuma rota funcionará, afetando diretamente o funcionamento as interfaces web e mobile_
