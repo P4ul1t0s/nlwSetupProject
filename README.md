@@ -1,4 +1,4 @@
-# nlwSetupMobileProject - Web & Mobile
+# 🚀nlwSetupMobileProject - Web & Mobile
 
 ### Configuração do ambiente
 
@@ -11,21 +11,21 @@
 * Na pasta _mobile_, rode <code>npm i</code>, para instalar as dependencias da aplicação mobile
 
 #
-### Para iniciar o backend (./server)
+### ⚙Para iniciar o backend (./server)
 
 * Dentro da pasta _server_, entre com <code>npm run dev</code> para iniciar o ambiente de desenvolvimento
 
 * Acesse **http://localhost:3003/** para ter acesso à aplicação
 
 #
-### Para iniciar o frontend (./web)
+### 🎨Para iniciar o frontend (./web)
 
 * Dentro da pasta _web_, entre com <code>npm run dev</code> para iniciar o ambiente de desenvolvimento
 
 * Acesse **http://localhost:5173/** para ter acesso à aplicação
 
 #
-### Para iniciar a aplicação mobile (./mobile)
+### 📱Para iniciar a aplicação mobile (./mobile)
 
 ##### 1. Utilizando aparelho físico (iOS & Android)
 
@@ -46,29 +46,33 @@
 * Siga as instruções exibidas para escolher o emudalor onde deseja que a aplicação seja instalada
 
 #
-### Ferramentas de desenvolvimento
+### 🛠Ferramentas de desenvolvimento
 
 * Na pasta _server_, rode <code>npx prisma migrate dev</code> para atualizar o BD em relação as alterações feitas no arquivo schema.prisma
 
 * Na pasta _server_, rode <code>npx prisma studio</code> para visualizar a interface gráfica do BD acessando **http://localhost:5555/**
 
 #
-### Rotas do Projeto
-##### Buscando hábito:
+### 🛰Rotas do Projeto
 
-[GET] http://localhost:3003/day?date=:query
+<ul>
+    <li>
+        <h5> Buscando hábito do dia: </h5>
+        <p>[GET] http://localhost:3003/day?date={ano}-{mês}-{dia}T12:00:00.000z</p>
+    </li>
+    <li>
+        <h5> Buscando resumo do hábito:
+        <p>[GET] http://localhost:3003/summary</p>
+    </li>
+    <li>
+        <h5> Completando/Descompletando hábito:
+        <p>[PATCH] http://localhost:3003/habits/:id/toggle</p>
+    </li>
+    <li>
+        <h5> Criando hábito:
+        <p>[POST] http://localhost:3003/habits <br/></p>
+        <p>JSON body: { "title": "Exemplo de Hábito",	"weekDays": [0, 1, 2] }</p>
+    </li>
+</ul>
 
-##### Buscando resumo do hábito:
-
-[GET] http://localhost:3003/summary
-
-##### Completando/Descompletando hábito:
-
-[PATCH] http://localhost:3003/habits/:id/toggle
-
-##### Criando hábito:
-
-[POST] http://localhost:3003/habits <br/>
-JSON body: { "title": "Exemplo de Hábito",	"weekDays": [0, 1, 2] }
-
-_Nota: o backend deve estar sendo executado na porta 3003 para que as rotas funcionem como nos exemplos acima. Caso não esteja, nenhuma rota funcionará, afetando diretamente o funcionamento as interfaces web e mobile_
+⚠ _Nota: o backend deve estar sendo executado na porta 3003 para que as rotas funcionem como nos exemplos acima. Caso não esteja, nenhuma rota funcionará, afetando diretamente o funcionamento as interfaces web e mobile_
