@@ -75,4 +75,4 @@
     </li>
 </ul>
 
-⚠ _Nota: o backend deve estar sendo executado na porta 3003 para que as rotas funcionem como nos exemplos acima. Caso não esteja, nenhuma rota funcionará, afetando diretamente o funcionamento as interfaces web e mobile_
+⚠ _Nota: o backend deve estar sendo executado na porta 3003 para que as rotas funcionem como nos exemplos acima. Caso não esteja, nenhuma rota funcionará, afetando diretamente o funcionamento das interfaces web e mobile_
