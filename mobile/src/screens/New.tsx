@@ -31,7 +31,7 @@ export function New(){
                     Qual seu comprometimento?
                 </Text>
                 <TextInput 
-                    className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800 focus:border-green-600"
+                    className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800 focus:border-green-500"
                     placeholder="ex.: Exercícios, Dormir X horas, etc..."
                     placeholderTextColor={colors.zinc[400]}
                 />
@@ -49,7 +49,7 @@ export function New(){
                     ))
                 }
                 <TouchableOpacity 
-                    className="w-full h-14 flex-row items-center justify-center bg-green-600 rounded-md mt-6"
+                    className="w-full h-14 flex-row items-center justify-center bg-green-500 rounded-md mt-6"
                     activeOpacity={0.7}
                 >
                     <Feather

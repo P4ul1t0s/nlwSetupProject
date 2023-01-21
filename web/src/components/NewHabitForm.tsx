@@ -44,7 +44,7 @@ export function NewHabitForm(){
                 type="text"
                 id="title"
                 placeholder="ex.: Exercícios, Dormir X horas, etc..."
-                className="p-4 rounded-lg mt-3 bg-zinc-800 text-white placeholder:text-zinc-400"
+                className="p-4 rounded-lg mt-3 bg-zinc-800 text-white placeholder:text-zinc-400 focus:outline-none focus:outline-green-500"
                 onChange={event => setTitle(event.target.value)}
                 value={title}
                 autoFocus
